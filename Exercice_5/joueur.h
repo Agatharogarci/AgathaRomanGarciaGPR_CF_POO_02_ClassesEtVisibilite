@@ -37,14 +37,24 @@ public:
     bool courir()
     {
         // TODO : verifier l'endurance, la depenser, renvoyer le bon resultat.
+
+        if (endurance_ >= 10)
+        {
+            endurance_ -= 10;
+            return true;
+        }
         return false;
     }
+
 
     // ---------------------------------------------------------- 2. se reposer
     // Se reposer remonte l'endurance jusqu'au maximum, jamais au-dela.
     void seReposer()
     {
         // TODO
+        endurance_ = enduranceMax_;
+
+
     }
 
     // -------------------------------------------------------- 3. ouvrir porte
@@ -54,6 +64,10 @@ public:
     bool ouvrirPorte()
     {
         // TODO
+        if (cles_ <= 0) {
+            return false;
+        }
+
         return false;
     }
 

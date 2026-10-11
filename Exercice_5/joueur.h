@@ -98,6 +98,9 @@ public:
     bool estVivant() const
     {
         // TODO
+        if (vie_ <= 0) {
+            return false;
+        }
         return true;
     }
 

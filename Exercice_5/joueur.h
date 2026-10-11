@@ -77,6 +77,10 @@ public:
     bool acheter(int prix)
     {
         // TODO
+        if (prix < or_) {
+            or_ -= prix;
+            return true;
+        }
         return false;
     }
 

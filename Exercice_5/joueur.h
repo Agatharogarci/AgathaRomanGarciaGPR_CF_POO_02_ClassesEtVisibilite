@@ -53,8 +53,6 @@ public:
     {
         // TODO
         endurance_ = enduranceMax_;
-
-
     }
 
     // -------------------------------------------------------- 3. ouvrir porte
@@ -64,11 +62,8 @@ public:
     bool ouvrirPorte()
     {
         // TODO
-        if (cles_ <= 0) {
-            return false;
-        }
 
-        return false;
+
     }
 
     // -------------------------------------------------------------- 4. acheter

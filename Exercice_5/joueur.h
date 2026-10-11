@@ -62,7 +62,11 @@ public:
     bool ouvrirPorte()
     {
         // TODO
-
+        if (cles_ > 0) {
+            cles_--;
+            return true;
+        }
+        return false;
 
     }
 

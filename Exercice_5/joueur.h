@@ -89,6 +89,7 @@ public:
     void subirDegats(int degats)
     {
         // TODO
+        vie_ = std::max(0, vie_ - degats);
     }
 
     // --------------------------------------------------------------- lecture
